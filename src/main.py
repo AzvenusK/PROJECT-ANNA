@@ -1,7 +1,6 @@
 from distutils.log import debug
 import speech_recognition as sr
 
-print('Test')
 listner = sr.Recognizer()
 try:
     with sr.Microphone() as source:
