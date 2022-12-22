@@ -1,7 +1,7 @@
 from distutils.log import debug
 import speech_recognition as sr
 import pyttsx3
-import pywhatkit
+import pywhatkit as pwkt
 
 listner = sr.Recognizer()
 engine = pyttsx3.init()
@@ -31,6 +31,7 @@ def run_annie():
         command = command.replace('arnold', '')
         command = command.replace('play','')
         talk('Playing Now'+command)
+        pwkt.playonyt(command)
         
 
 run_annie()
